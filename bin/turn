@@ -2,7 +2,12 @@
 require_relative "../lib/turn"
 
 puts "Welcome to Tic Tac Toe"
-
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+display_board(board)
 
+count = 0
+
+until count == 9
 turn(board)
+count += 1
+end
